@@ -21,7 +21,7 @@ export class User {
   @Column({ select: false, nullable: true })
   password: string;
 
-  @Column()
+  @Column({ default: true })
   is_verified: string;
 
   @CreateDateColumn()
